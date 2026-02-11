@@ -53,3 +53,20 @@ CREATE TABLE sales (
                            HTTP/HTTPS
 //HTTP (Hypertext Transfer Protocol) and HTTPS (HTTP Secure) are protocols for transmitting data between a web browser and a server. HTTP sends data in plain text, leaving it vulnerable to interception, whereas HTTPS uses SSL/TLS encryption to secure data, providing confidentiality, integrity, and authentication.
 - HTTPS is essential for protecting sensitive user information and boosts SEO.
+
+                       **INTRODUCTION TO PSYCOPG2.**
+-Simply a POSTGRESQL driver or adapter used to connect python to a POSTGRES database.
+-It needs to know the SERVER,DATABSE,PORT,USERNAME AND PASSWORD.
+-python is connected to a POSTGRES database by psycopg2,using the function:#psycopg2.connect()
+1.HOST:on what server is the database hosted.
+- local host:my local device(laptop or computer),it uses 127.0.0.1
+2.PORT:exactly where the Postgres service is running on my server.
+-5432 is the default port for the POSTGRES SERVICE
+3.USER:username used to authenticate or identify who is accessing your database.
+4.PASSWORD:The password attached to the username,to authenticate oneself before using POSTGRES services.
+4.DB NAME:what database are u connecting to.
+**cur**:an object used to perform database operations.
+it performs the following:CRUD operations(create,Read,Update,Delete data)
+
+DB OPERATIONS
+-insert two products in SQLSHELL.
