@@ -1,4 +1,5 @@
 #LEARN FLASK VIA THIS PROJECT.
+FLASK:a popular, lightweight Python web framework that provides the essential tools to build web applications and APIs.
 -The project entails a POS system called MY DUKA.
 -run the terminal on VSCODE and type pip install flask
 -after running,"pip install flask"
@@ -40,14 +41,14 @@ CREATE TABLE sales (
 //WEB HOSTING:Web hosting is a service that provides secure, internet-connected server space to store website files (HTML, CSS, images, data), making them accessible to users worldwide 24/7. It acts as the "home" for a website, allowing browsers to request and display site content instantly. Hosting providers handle server maintenance, security, and uptime.(Renting a server to deploy resources and make them available to the internet)
 
                               I.P ADDRESS
-//I.P ADDRESS:An IP (Internet Protocol) address is a unique numerical label assigned to every device connected to a computer network that uses the Internet Protocol for communication. It acts as a digital identifier or "mailing address" for computers, phones, and IoT devices, allowing them to send/receive data, locate each other, and communicate over local networks or the internet.(A unique number that identifies a number or a network.)
+//I.P ADDRESS:An IP (Internet Protocol) address is a unique numerical label assigned to every device connected to a computer network that uses the Internet Protocol for communication. It acts as a digital identifier or "mailing address" for computers, phones, and IoT devices, allowing them to send/receive data, locate each other, and communicate over local networks or the internet.(A unique number that identifies a number or a network.)(A unique number that identifies a device on the internet.)
 
                             DOMAIN NAME
-//DOMAIN NAME:A domain name is the unique, human-friendly address used to locate a website on the internet, acting as an easy-to-remember alias for a complex numerical IP address. Examples include google.com or wikipedia.org, which users type into browsers to reach specific web servers.
+//DOMAIN NAME:A domain name is the unique, human-friendly address used to locate a website on the internet, acting as an easy-to-remember alias for a complex numerical IP address. Examples include google.com or wikipedia.org, which users type into browsers to reach specific web servers.(Human friendly name for us to access an ip address.)
 
                             U.R.L
 //URL:A URL (Uniform Resource Locator) is the unique, web-based address for a specific resource on the internet, such as a website, image, or file. Acting like a digital, functional address, it tells a browser how to locate and display information.
-- It typically consists of a protocol (e.g., https), a domain name (e.g., example.com), and a file path. 
+- It typically consists of a protocol (e.g., https), a domain name (e.g., example.com), and a file path(specific resource u want to access),port(where a service is running). (Full address of a resource on the internet.)
 
                            HTTP/HTTPS
 //HTTP (Hypertext Transfer Protocol) and HTTPS (HTTP Secure) are protocols for transmitting data between a web browser and a server. HTTP sends data in plain text, leaving it vulnerable to interception, whereas HTTPS uses SSL/TLS encryption to secure data, providing confidentiality, integrity, and authentication.
