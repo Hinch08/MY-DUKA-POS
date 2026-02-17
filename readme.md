@@ -70,3 +70,19 @@ it performs the following:CRUD operations(create,Read,Update,Delete data)
 
 DB OPERATIONS
 -insert two products in SQLSHELL.
+
+OBJECT ORIENTED PROGRAMMING
+
+We have the follwing broad categories of data types in Python:
+
+1.Inbuilt data types - data types that come with the programming language
+
+int, float, str , lists, bool 2.User defined data types - created by the programmer
+enabled by the use of classes and objects
+OOP - a paradigm that builds programs around classes and objects Class - a blueprint for creating objects Objects - an instance of a class
+
+Any class has 2 things: 1.Data - attributes - variables holding data in a class - answers the question , what does a class have? - e.g. class Person -> name, age, email, dob, address class car - make , yom , model
+
+2.Behaviour - defined by methods - Method - a function inside a class - Behaviour answers the question, what can a class do? - e.g class Person - walk , talk, eat ,sleep , code class Car - start , move ,stop
+
+*Constructor - a special method used to initialze objects - it is automatically called when an object is created - init() self - refers to the object being created
