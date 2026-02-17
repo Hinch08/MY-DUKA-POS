@@ -4,16 +4,18 @@ class Person:
         self.age = age
         self.email = email
 
+    def display_info(self):
+        print(f"Name: {self.name}")
+        print(f"Age: {self.age}")
+        print(f"Email: {self.email}")
+
+    def talks(self):
+        print(f"A person talks always")              
+
 person1 = Person("Hillary",30,"hinchjack08@gmail.com")
 print(type(person1))
-print(person1.name)
-print(person1.age)
-print(person1.email)
-person2 = Person("John",25,"johnmaina@gmail.com")
-print(type(person2))
-print(person2.name)
-print(person2.age)
-print(person2.email)
+person1.display_info()
 
-        
-    
+person2 = Person("Job",25,"job@outlook.mail")
+person2.display_info()
+person2.talks()
