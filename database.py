@@ -23,10 +23,11 @@ def get_products():
 products = get_products()
 print(products)
 
-def insert_products(values):
- cur.execute("insert into products(name,buying_price,selling_price)values{values}")
- conn.commit()
 
+def insert_products(values):
+    cur.execute(f"insert into products(name,buying_price,selling_price)values{values}")
+    conn.commit()
+    
 product1 = ('samsung',20000,30000)
 product2 = ('hp',30000,40000)
 
@@ -45,13 +46,14 @@ def insert_sale(values):
     cur.execute(f"insert into sales(pid,quantity)values{values}")
     conn.commit()
 
-# sale1 = (3,30)
-# sale2 = (4,12)
+    
+sale1 = (3,30)
+sale2 = (4,12)
 
-# insert_sale(sale1)
-# insert_sale(sale2)
+insert_sale(sale1)
+insert_sale(sale2)
 
-# print(sales)
+print(sales)
 
 
 def get_sales_per_product():
@@ -78,5 +80,7 @@ def get_profit_per_day():
 
 profit_per_day = get_profit_per_day()
 print(profit_per_day)
+
+
 
 

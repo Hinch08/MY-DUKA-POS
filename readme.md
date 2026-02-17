@@ -71,6 +71,45 @@ it performs the following:CRUD operations(create,Read,Update,Delete data)
 DB OPERATIONS
 -insert two products in SQLSHELL.
 
+FUNCTIONS
+
+block of code used to perform a specific tasks Why use Functions? 1.Modularity - breaking a large codebase into smaller programs 2.Code organization 3.Reusability of code 4.Better debugging 5.Scales well 6.Readability
+Global vs Local Space
+
+Insert Syntax insert into table_name(column1,column2,column3,...)values(value1,value2,value3,...)
+
+Fetching vs Inserting Data Fetching: cur.execute(...your select query goes here) cur.fetchall() - retrieves data from the db to Python
+
+Inserting: cur.execute(...your insert query goes here) conn.commit() - commit / save data to the database permanently
+
+TASK Write a function that: 1.fetches data from your sales table - get_sales() 2.inserts sales into your sales table - insert_sale()
+
+sales per day sales per product profit per product profit per day
+
+products table - id, product name , bprice ,sprice sales - id, pid, quantity , created_at
+
+sales per product sales = money made = sprice * quantity join - pk = fk
+
+select products.name as p_name , sum(products.selling_price * sales.quantity) as total_sales from products join sales on sales.pid = products.id group by(p_name);
+
+aggregate functions in sql sum() max() min() avg() count()
+
+p_name | total_sales --------+------------- milk | 6380.00 bread | 1200.00 (2 rows)
+
+n/b : when using aggregate functions in sql, you have to group by
+
+select date(sales.created_at) as date , sum((products.selling_price - products.buying_price) as profit * sales.quantity) from sales join products on products.id = sales.pid group by(date);
+
+TASK 1.Using functions:
+
+insert stock data using placeholders --- %s instead of using f-string (research)
+fetch stock data
+2.Using functions fetch the following data
+
+sales per day -profit per product
+
+
+
 OBJECT ORIENTED PROGRAMMING
 
 We have the follwing broad categories of data types in Python:
