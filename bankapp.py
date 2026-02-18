@@ -10,8 +10,10 @@ class BankAccount:
         self.date_opened = date_opened
     
     def deposit(self,amount):
-        self.balance += amount
-        print(f"Deposited {amount}. New balance is {self.balance}")
+        if amount > 0:
+            self.balance += amount     
+        else:
+            print("Invalid amount. Please enter a positive number.")    
     
     def withdraw(self,amount):
         if amount > self.balance:
@@ -26,7 +28,13 @@ class BankAccount:
         print(f"Balance: {self.balance}")
         print(f"Date Opened: {self.date_opened}")
 
-account1 = BankAccount("ABD-123-2026",1000,"Hillary","2026-02-18")
+account1 = BankAccount("ABD-123-2026",0,"Hillary","2026-02-18")
+account2 = BankAccount("ABD-456-2026",0,"Job","2026-02-18")
 account1.display_info()
-account1.deposit(500)
-account1.withdraw(200)     
+account1.deposit(10000)
+account1.withdraw(5000)
+account1.display_info()
+account2.display_info()
+account2.deposit(15000)
+account2.withdraw(3000)
+account2.display_info()
