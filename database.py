@@ -81,6 +81,8 @@ def get_profit_per_day():
 profit_per_day = get_profit_per_day()
 print(profit_per_day)
 
+cur.close()
+conn.close()
 
 
 
