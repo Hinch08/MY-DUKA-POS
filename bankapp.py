@@ -1,6 +1,15 @@
 # TASK 1.Create a class called BankAccount with the attributes: - account number , balance , owner name , date opened 
 # 2.Add some behaviour to the above class using the methods: - deposit() - withdraw() -display_info()
 # 3.Create 2 BankAccount objects that can deposit , withdraw and display amount
+from datetime import date
+date_time = date.today()        
+print(date_time)
+
+import random
+account_number = random.randint(100000,999999)
+
+amount = float(input("Enter the amount to deposit: "))
+withdraw_amount = float(input("Enter the amount to withdraw: "))
 
 class BankAccount:
     def __init__(self,account_number,balance,owner_name,date_opened):
@@ -30,13 +39,13 @@ class BankAccount:
         print(f"Date Opened: {self.date_opened}")
         print("-----------------------------")
 
-account1 = BankAccount("ABD-123-2026",0,"Hillary","2026-02-18")
-account2 = BankAccount("ABD-456-2026",0,"Job","2026-02-18")
+account1 = BankAccount(account_number,amount,"Hillary",date_time)
+account2 = BankAccount(account_number+1,amount,"Job",date_time)
 account1.display_info()
-account1.deposit(10000)
-account1.withdraw(5000)
+account1.deposit(amount)
+account1.withdraw(withdraw_amount)
 account1.display_info()
 account2.display_info()
-account2.deposit(15000)
-account2.withdraw(3000)
+account2.deposit(amount)
+account2.withdraw(withdraw_amount)
 account2.display_info()
