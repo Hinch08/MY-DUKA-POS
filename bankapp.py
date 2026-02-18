@@ -27,4 +27,6 @@ class BankAccount:
         print(f"Date Opened: {self.date_opened}")
 
 account1 = BankAccount("ABD-123-2026",1000,"Hillary","2026-02-18")
-account1.display_info()        
+account1.display_info()
+account1.deposit(500)
+account1.withdraw(200)     
