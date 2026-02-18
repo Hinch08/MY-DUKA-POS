@@ -19,3 +19,4 @@ person1.display_info()
 person2 = Person("Job",25,"job@outlook.mail")
 person2.display_info()
 person2.talks()
+

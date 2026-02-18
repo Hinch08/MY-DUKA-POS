@@ -125,3 +125,5 @@ Any class has 2 things: 1.Data - attributes - variables holding data in a class 
 2.Behaviour - defined by methods - Method - a function inside a class - Behaviour answers the question, what can a class do? - e.g class Person - walk , talk, eat ,sleep , code class Car - start , move ,stop
 
 *Constructor - a special method used to initialze objects - it is automatically called when an object is created - init() self - refers to the object being created
+
+//    INHERITANCE
