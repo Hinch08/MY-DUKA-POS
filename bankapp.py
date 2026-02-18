@@ -23,10 +23,12 @@ class BankAccount:
             print(f"Withdrew {amount}. New balance is {self.balance}")
 
     def display_info(self):
+        print("Bank Account Information:")
         print(f"Account Number: {self.account_number}")
         print(f"Owner Name: {self.owner_name}")
         print(f"Balance: {self.balance}")
         print(f"Date Opened: {self.date_opened}")
+        print("-----------------------------")
 
 account1 = BankAccount("ABD-123-2026",0,"Hillary","2026-02-18")
 account2 = BankAccount("ABD-456-2026",0,"Job","2026-02-18")
