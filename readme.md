@@ -127,3 +127,17 @@ Any class has 2 things: 1.Data - attributes - variables holding data in a class 
 *Constructor - a special method used to initialze objects - it is automatically called when an object is created - init() self - refers to the object being created
 
 //    INHERITANCE
+This is the concept where one class inherits / acquires properties from another class Parent class
+-The class from which properties are inherited -Also called Base class / Super class Child class -The class inheriting properties from a parent class -Also called Derived class / Sub class
+
+Why Inheritance is Important? 1.Code Reusability 2.Adds new features to an existing class 3.Allows behaviour modification - method overriding
+
+Types of Inheritance 1.Single-level - a child inherits from a single parent class 2.Multiple inheritance - a child inheriting from more than one parent class 2.Multilevel inheritance - a child inherits from a parent class while also this parent class inherits from another parent 4.Hierrachial inheritance -multiple child classes from a single parent class
+
+super -> a keyword that allows a child class to access parent methods and attributes
+
+Method Overriding This is where a child class provides its own implementation of a method that already exists in the parent class - The child's method replaces the parent method when called by a child object -> This is a form of POLYMORPHISM
+
+Task 1.Create a Car Class Have the following attributes brand - model - year -fuel_capcity - fuel_level -is_running(boolen value) Have the following methods as behaviour for your class: start() stop() refuel() drive() display_car_info()
+
+2.Create child classes from parent class Car namely: Toyota & Audi and have them override the methods above.
