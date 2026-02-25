@@ -141,3 +141,11 @@ Method Overriding This is where a child class provides its own implementation of
 Task 1.Create a Car Class Have the following attributes brand - model - year -fuel_capcity - fuel_level -is_running(boolen value) Have the following methods as behaviour for your class: start() stop() refuel() drive() display_car_info()
 
 2.Create child classes from parent class Car namely: Toyota & Audi and have them override the methods above.
+
+ample:
+
+https://code.jquery.com/jquery-3.7.1.js
+https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js
+https://cdn.datatables.net/2.3.7/js/dataTables.js
+https://cdn.datatables.net/2.3.7/js/dataTables.bootstrap5.js
+Other examples

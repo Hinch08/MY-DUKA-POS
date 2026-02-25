@@ -4,12 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
+    <!-- database for css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.3.7/css/dataTables.bootstrap5.css">
     <title>{% block title %}{% endblock %}</title>
+    <!-- database for javascript -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.datatables.net/2.3.7/js/dataTables.js"></script>
+    <script src="https://cdn.datatables.net/2.3.7/js/dataTables.bootstrap5.js"></script>
 </head>
 
 <body>
@@ -17,8 +22,9 @@
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-dark navbar-expand-lg bg-dark opacity-75">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">MY DUKA POS</a>
-
+            <a class="navbar-brand" href="#">
+                <img src="./static/duka pos.png" alt="Bootstrap" width="250" height="50">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -26,23 +32,34 @@
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" href="#">Home</a>
-                    <a class="nav-link active" href="#">products</a>
-                    <a class="nav-link active" href="#">sales</a>
-                    <a class="nav-link active" href="#">stock</a>
-                    <a class="nav-link active" href="#">dashboard</a>
-                    <a class="nav-link active" href="#">register</a>
-                    <a class="nav-link active" href="#">login</a>
+                    <a class="nav-link active" href="/home">Home</a>
+                    <a class="nav-link active" href="/products">products</a>
+                    <a class="nav-link active" href="/sales">sales</a>
+                    <a class="nav-link active" href="/stock">stock</a>
+                    <a class="nav-link active" href="/dashboard">dashboard</a>
+                    <a class="nav-link active" href="/register">register</a>
+                    <a class="nav-link active" href="/login">login</a>
 
                 </div>
             </div>
         </div>
     </nav>
 
-<div class="container mt-5 pt-5">
-    {% block content %}
-    {% endblock %}
-</div>
+    <div class="container-fluid mt-2 text-center" style="background-color: #F5F1E8;">
+        <h1 class="fs-1 fw-bold pt-5 mt-5" style="color: #3C2B1F; font-family: 'Cinzel', serif;">
+            Retail Intelligence in Your Pocket.
+        </h1>
+
+        <p class="fs-6"></p>
+
+        <button type="button" class="btn btn-outline-primary mb-5">
+            SIGN-UP
+        </button>
+    </div>
+    <div class="container mt-5 pt-5">
+        {% block content %}
+        {% endblock %}
+    </div>
 
 
 
@@ -52,6 +69,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script>
+        new DataTable('#example');
+    </script>
 
 </body>
 
