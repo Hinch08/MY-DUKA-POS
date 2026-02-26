@@ -26,20 +26,37 @@ def add_products():
 
 @app.route('/sales')
 def sales():
-    if request.method == 'POST':
-        product_id = request.form['product_id']
-        quantity = request.form['quantity']
-        new_sale = (product_id,quantity)
-        insert_sale(new_sale)
-        print("Sale added successfully")
     sales = fetch_sales()
     return render_template('sales.html', sales = sales)
+
+@app.route('/add_sales',methods=['POST'])
+def add_sales():
+    if request.method == 'POST':
+        product_name = request.form['pid']
+        quantity = request.form['quantity']
+        price = request.form['price']
+        new_sale = (product_name,quantity,price)
+        insert_sale(new_sale)
+        print("Sale added successfully")
+    return redirect(url_for('sales'))
 
 @app.route('/stock')
 def stock():
     value = 789
     numbers = [1,2,3,4,5,6,7,8,9]
     return render_template('stock.html',x=value,y=numbers)
+
+
+@app.route('/ add_stock',methods=['GET','POST'])
+def add_stock():
+    if request.method == 'POST':
+        product_name = request.form['pid']
+        quantity = request.form['quantity']
+        price = request.form['price']
+        new_stock = (product_name,quantity,price)
+        insert_stock(new_stock)
+        print("Stock added successfully")
+    return redirect(url_for('stock'))
 
 @app.route('/dashboard')
 def dashboard():
