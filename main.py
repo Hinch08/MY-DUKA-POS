@@ -26,6 +26,12 @@ def add_products():
 
 @app.route('/sales')
 def sales():
+    if request.method == 'POST':
+        product_id = request.form['product_id']
+        quantity = request.form['quantity']
+        new_sale = (product_id,quantity)
+        insert_sale(new_sale)
+        print("Sale added successfully")
     sales = fetch_sales()
     return render_template('sales.html', sales = sales)
 
